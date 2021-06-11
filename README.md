@@ -58,7 +58,7 @@ As for new things I tried using for fun:
     - I hadn't used an ORM for Postgres and node until this project, having written everything using `pg` and writing queries directly.
 - pm2 --> a process manager for node.js that I found on a blog
 
-## What I'd Reccomend to Anyone Else
+## What I'd Recommend to Anyone Else
 
 - If you're going to timebox something, use a tech stack you're more familiar with instead of trying to relearn one you knew years ago. 
 - Make absolutely sure your dev environment is set up on your new computer. It isn't fun scrambling to get everything reconfigured.
