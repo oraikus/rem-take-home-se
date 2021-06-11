@@ -16,7 +16,7 @@ const newConversation = () => {
     const statusChance = Math.random()
     return {
         title: namor.generate({ words: 1, numbers: 0 }) + "Test Title",
-        startDate: randomDate(new Date(2012, 0, 1), new Date()),
+        startDate: randomDate(new Date(2012, 0, 1), new Date()).toString(),
         visits: Math.floor(Math.random() * 100),
         progress: Math.floor(Math.random() * 100),
         status:
