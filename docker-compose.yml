@@ -1,0 +1,43 @@
+# TODO before production: replace PG_USER and Password along with environment info with environment variables
+version: "3.7"
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports: 
+      - '5432:5432'
+    volumes:
+      - remeshchat-db:/var/lib/postgresql/data
+
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile_server.development
+    environment:
+      DB_SCHEMA: postgres
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_HOST: postgres
+    depends_on:
+      - postgres
+    ports:
+      - '8080:8080'
+
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile_client.development
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    depends_on:
+      - server
+    ports:
+      - '3000:3000'
+
+        
+volumes:
+  remeshchat-db:
