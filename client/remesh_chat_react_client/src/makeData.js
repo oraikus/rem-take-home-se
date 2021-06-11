@@ -8,12 +8,15 @@ const range = len => {
     return arr
 }
 
-const newPerson = () => {
+function randomDate(start, end) {
+    return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+}
+
+const newConversation = () => {
     const statusChance = Math.random()
     return {
-        firstName: namor.generate({ words: 1, numbers: 0 }),
-        lastName: namor.generate({ words: 1, numbers: 0 }),
-        age: Math.floor(Math.random() * 30),
+        title: namor.generate({ words: 1, numbers: 0 }) + "Test Title",
+        startDate: randomDate(new Date(2012, 0, 1), new Date()),
         visits: Math.floor(Math.random() * 100),
         progress: Math.floor(Math.random() * 100),
         status:
@@ -30,7 +33,7 @@ export default function makeData(...lens) {
         const len = lens[depth]
         return range(len).map(d => {
             return {
-                ...newPerson(),
+                ...newConversation(),
                 subRows: lens[depth + 1] ? makeDataLevel(depth + 1) : undefined,
             }
         })

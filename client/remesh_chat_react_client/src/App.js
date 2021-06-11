@@ -246,14 +246,14 @@ function Table({ columns, data }) {
 
 function App() {
   // data state to store axios call results
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
   // Using useEffect to call the API once mounted and set the data
   useEffect(() => {
     (async () => {
       // TODO: modify this axios call to return all conversations
       const result = await axios("localhost:8080/conversations/all");
-      setData(result.data);
+      // setData(result.data);
     })();
   }, []);
 
@@ -284,7 +284,7 @@ function App() {
     []
   )
 
-  // const data = React.useMemo(() => makeData(100000), [])
+  const data = React.useMemo(() => makeData(100000), [])
 
   return (
     <Container fluid>
