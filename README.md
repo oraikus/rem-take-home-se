@@ -51,7 +51,7 @@ This was a big mistake for a few reasons:
 
 After that I figured I'd use what time I had left to write something quick and dirty in node. This led to not completing the majority of the take-home assignment, but hopefully gives enough of what I was going for in regard to the front-end, projected testing, and how I had the backend database relationships set up.
 
-### Using Unfamiliar Libraries Because It Was Fun
+### Using Unfamiliar Libraries
 
 As for new things I tried using for fun:
 - Sequelize
