@@ -265,7 +265,6 @@ function App() {
           {
             Header: 'Title',
             accessor: 'title',
-            filter: 'fuzzyText',
           },
           {
             Header: 'Start Date',
@@ -284,7 +283,7 @@ function App() {
     []
   )
 
-  const data = React.useMemo(() => makeData(1000), [])
+  const data = React.useMemo(() => makeData(250), [])
 
   return (
     <Container fluid>
