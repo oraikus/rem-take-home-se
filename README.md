@@ -4,6 +4,11 @@ Don't try to run this without using Docker containers. I definitely didn't.
 
 # Development
 
+## Dependencies
+
+- Docker
+    - You can find your OS-specific installation instructions regarding Docker Desktop here: https://docs.docker.com/get-docker/
+
 ## Run with Docker Compose: server + client + database
 
 ```bash
