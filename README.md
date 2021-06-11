@@ -15,6 +15,8 @@ Don't try to run this without using Docker containers. I definitely didn't.
 $ docker-compose up
 ```
 
+Don't forget to include the --build flag if you want to build images before starting containers. For example, you need to do this if you make any changes. 
+
 ## Stop all containers with Docker Compose
 
 ```bash
@@ -48,7 +50,8 @@ This was a big mistake for a few reasons:
 After that I figured I'd use what time I had left to write something quick and dirty in node. This led to not completing the majority of the take-home assignment, but hopefully gives enough of what I was going for in regard to the front-end, projected testing, and how I had the backend database relationships set up.
 
 As for new things I tried using for fun:
-- Sequelize (I hadn't used an ORM for Postgres and node until this project)
+- Sequelize
+    - I hadn't used an ORM for Postgres and node until this project, having written everything using `pg` and writing queries directly.
 - pm2 --> a process manager for node.js that I found on a blog
 
 ## What I'd Reccomend to Anyone Else
