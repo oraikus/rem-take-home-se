@@ -12,10 +12,10 @@ Don't try to run this without using Docker containers. I definitely didn't.
 ## Run with Docker Compose: server + client + database
 
 ```bash
-$ docker-compose up
+$ docker-compose up [--build]
 ```
 
-Don't forget to include the --build flag if you want to build images before starting containers. For example, you need to do this if you make any changes. 
+The --build flag will build images before starting containers. Use if needed at your own discretion.
 
 ## Stop all containers with Docker Compose
 
