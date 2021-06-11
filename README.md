@@ -66,3 +66,7 @@ As for new things I tried using for fun:
 ## Miscellaneous
 
 I normally do an interactive rebase and squash or fixup my commits, but given the time crunch I was under I didn't do so in this project.
+
+## To Whoever Reads This At Remesh
+
+I _really_ enjoyed working on this take home, and thanks for the opportunity. I know this is a far cry from a feature complete take home submission, but by the time I decided to rewrite my Django submission with Node I had been up for 18 hours. I'm looking forward to all the constructive feedback I'm going to receive and I'm sorry in advance for the TODO's I never got to. 
