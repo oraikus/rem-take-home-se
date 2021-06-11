@@ -62,3 +62,7 @@ As for new things I tried using for fun:
 
 - If you're going to timebox something, use a tech stack you're more familiar with instead of trying to relearn one you knew years ago. 
 - Make absolutely sure your dev environment is set up on your new computer. It isn't fun scrambling to get everything reconfigured.
+
+## Miscellaneous
+
+I normally do an interactive rebase and squash or fixup my commits, but given the time crunch I was under I didn't do so in this project.
