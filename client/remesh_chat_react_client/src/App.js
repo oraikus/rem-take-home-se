@@ -223,8 +223,8 @@ function Table({ columns, data }) {
                 })}
                 <td>
                   {/* TODO: reference the first td in this row, and send that ID to the server route for getting
-                      all messages for a given conversationID */}
-                  <Button bsStyle="primary" fill id="viewAssociated" onClick={() => this.viewSubmit(conversationID)}>
+                      all messages for a given conversationID. For now I'm using a string as the parameter */}
+                  <Button bsStyle="primary" fill id="viewAssociated" onClick={() => this.viewSubmit("conversationID")}>
                     View
                   </Button>
                 </td>
