@@ -38,7 +38,9 @@ You can access the exposed ports from the docker containers as follows: the back
 
 Tests are run during the `docker-compose up` command.
 
-## Challenges I Faced And What I Can Do Better
+## Challenges I Faced, Mistakes I Made, And What I Can Do Better
+
+### Trying To Use a Framework I Haven't Used In 5 Years
 
 I initially decided to try to use Django with the given React template in the take-home.
 This was a big mistake for a few reasons:
@@ -49,11 +51,14 @@ This was a big mistake for a few reasons:
 
 After that I figured I'd use what time I had left to write something quick and dirty in node. This led to not completing the majority of the take-home assignment, but hopefully gives enough of what I was going for in regard to the front-end, projected testing, and how I had the backend database relationships set up.
 
+### Using Unfamiliar Libraries Because It Was Fun
+
 As for new things I tried using for fun:
 - Sequelize
     - I hadn't used an ORM for Postgres and node until this project, having written everything using `pg` and writing queries directly.
 - pm2 --> a process manager for node.js that I found on a blog
 
 ## What I'd Reccomend to Anyone Else
+
 - If you're going to timebox something, use a tech stack you're more familiar with instead of trying to relearn one you knew years ago. 
 - Make absolutely sure your dev environment is set up on your new computer. It isn't fun scrambling to get everything reconfigured.
